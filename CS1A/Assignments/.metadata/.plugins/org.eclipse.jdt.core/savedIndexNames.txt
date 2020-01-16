@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/AG/Desktop/foothill/CS1A/.metadata/.plugins/org.eclipse.jdt.core
+3584386447.index
+1412680892.index
+3128207647.index

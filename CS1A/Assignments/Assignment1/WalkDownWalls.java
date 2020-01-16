@@ -1,16 +1,34 @@
 import becker.robots.*;
 
 // Create a new type of robot, named RobotThatCanWalkDownWalls on the next line(s)
-?????????????????????????????????extends Robot{
+
+
+class RobotThatCanWalkDownWalls extends Robot{
 	RobotThatCanWalkDownWalls(City c,int st,int ave,Direction dir,int num) {
 		super(c,st,ave,dir,num);
 	}
 	
 	// You should create a new command named turnRight here:
+	
+	public void turnRight() {
+		this.turnLeft();
+		this.turnLeft();
+		this.turnLeft();
+	}
+	
 	// The book likes to call commands 'services'.  In programming lingo, a 
 	// command or service is called a 'method'
 	
 	// You should create a new service named walkDownWall here:
+	
+	public void walkDownWall() {
+		this.move();
+		this.turnRight();
+		this.move();
+		this.move();
+		this.move();
+		this.turnLeft();
+	}
 	
 }
 
@@ -35,6 +53,23 @@ public class WalkDownWalls extends Object {
 		// the walkDownWall method) along with the built in services
 		// (like the pickThing method) that makes the robot
 		// do the same thing as the flowchart in the in class exercises.
+		jo.move();
+		jo.turnRight();
+		jo.move();
+		jo.move();
+		jo.move();
+		jo.pickThing();
+		jo.turnLeft();
+		jo.move();
+		jo.turnRight();
+		jo.move();
+		jo.move();
+		jo.move();
+		jo.turnLeft();
+		jo.move();
+		jo.putThing();
+
+		
 
 	}
 }
