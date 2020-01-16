@@ -53,19 +53,9 @@ public class WalkDownWalls extends Object {
 		// the walkDownWall method) along with the built in services
 		// (like the pickThing method) that makes the robot
 		// do the same thing as the flowchart in the in class exercises.
-		jo.move();
-		jo.turnRight();
-		jo.move();
-		jo.move();
-		jo.move();
+		jo.walkDownWall();
 		jo.pickThing();
-		jo.turnLeft();
-		jo.move();
-		jo.turnRight();
-		jo.move();
-		jo.move();
-		jo.move();
-		jo.turnLeft();
+		jo.walkDownWall();
 		jo.move();
 		jo.putThing();
 
